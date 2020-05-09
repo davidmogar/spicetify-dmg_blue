@@ -1,0 +1,74 @@
+/* ------------------------------
+ * Remove scrollbars
+ * ------------------------------ */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* ------------------------------
+ * Make progress bars visible even when not hovered
+ * ------------------------------ */
+.progress-bar {
+    background: var(--modspotify_slider_bg);
+}
+
+.progress-bar .handle {
+    opacity: 1
+}
+
+.progress-bar .inner {
+    background-color: var(--modspotify_indicator_fg_and_button_bg) !important;
+}
+
+/* ------------------------------
+ * Style like buttons
+ * ------------------------------ */
+button.added.button.button-add.button-icon-only,
+button.button.button-add.button-icon-only:hover,
+.nft-enabled .added button.button.button-add.button-icon-only,
+.nft-enabled .added button.button.button-add.button-icon-only:before,
+.tracklist-queue tr:hover button.button.button-add.button-icon-only:before {
+    color: #ff3d71 !important;
+}
+
+button.button.button-add.button-icon-only {
+    color: var(--modspotify_secondary_fg);
+}
+
+/* ------------------------------
+ * Change ConnectPopup background and remove image
+ * ------------------------------ */
+.ConnectPopup__content,
+.ConnectPopup__device,
+.ConnectPopup__header {
+    background-color: var(--modspotify_main_bg);
+}
+
+.ConnectPopup__device--available:focus, .ConnectPopup__device--available:hover {
+    background-color: var(--modspotify_sidebar_and_player_bg);
+}
+
+.ConnectPopup img {
+    display: none;
+}
+
+/* ------------------------------
+ * Make progress bars visible even when not hovered
+ * ------------------------------ */
+.tl-row.selected .tl-cell {
+    background-color: var(--modspotify_sidebar_and_player_bg);
+}
+
+/* ------------------------------
+ * Hide border on sidebar's selected item
+ * ------------------------------ */
+.SidebarListItem--is-active:after {
+    display: none;
+}
+
+/* ------------------------------
+ * Use same style for all headers
+ * ------------------------------ */
+.Header__background-color {
+    background-color: var(--modspotify_main_bg) !important;
+}
